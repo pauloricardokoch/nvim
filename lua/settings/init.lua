@@ -19,8 +19,10 @@ set.termguicolors = true
 
 set.cursorline = true
 set.colorcolumn = '80'
-set.number = true 
+set.number = true
 
 set.hidden = true
 
 set.clipboard = "unnamedplus"
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
