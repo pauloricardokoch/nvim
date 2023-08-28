@@ -21,4 +21,5 @@ return require 'packer'.startup(function(use)
             require("telescope").load_extension("live_grep_args")
         end
     }
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 end)
