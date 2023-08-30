@@ -8,3 +8,4 @@ require("tokyonight").setup({
 cmd [[ colorscheme tokyonight ]]
 
 cmd [[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]
+cmd [[hi NvimTreeNormalNC guibg=NONE]]

@@ -29,3 +29,6 @@ set('n', '<leader>sh', builtin.help_tags, {})
 set('n', 'du', dapui.toggle, {})
 set('n', 'ds', dap.continue, {})
 set('n', 'dt', dap.toggle_breakpoint, {})
+
+-- bar bar
+map('n', '<C-p>', '<Cmd>BufferPick<CR>', opts)
