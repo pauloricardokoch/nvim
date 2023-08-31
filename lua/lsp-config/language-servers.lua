@@ -7,6 +7,13 @@ lspconfig.gopls.setup {}
 lspconfig.lua_ls.setup {}
 cmd('COQnow -s')
 
+-- overwrite COQ keymaps
+vim.g.coq_settings = {
+    keymap = {
+        jump_to_mark = "",
+    },
+}
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>de', vim.diagnostic.open_float)
