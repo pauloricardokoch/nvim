@@ -31,4 +31,4 @@ set('n', 'ds', dap.continue, {})
 set('n', 'dt', dap.toggle_breakpoint, {})
 
 -- bar bar
-map('n', '<C-p>', '<Cmd>BufferPick<CR>', opts)
+map('n', '<C-i>', '<Cmd>BufferPick<CR>', opts)
