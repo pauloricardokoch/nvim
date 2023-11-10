@@ -25,5 +25,5 @@ set.hidden = true
 
 set.clipboard = "unnamedplus"
 vim.opt.listchars = { space = '␣', tab = '▷▷' }
-vim.opt.list = true
+-- vim.opt.list = true
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
