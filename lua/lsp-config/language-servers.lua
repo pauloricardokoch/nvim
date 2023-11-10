@@ -3,7 +3,23 @@ local lspconfig = require('lspconfig')
 local coq = require('coq')
 local cmd = vim.cmd
 
-lspconfig.gopls.setup {}
+lspconfig.gopls.setup {
+    cmd = { 'gopls' },
+    settings = {
+        gopls = {
+            analyses = {
+                nilness = true,
+                unusedparams = true,
+                unusedwrite = true,
+                useany = true,
+            },
+            experimentalPostfixCompletions = true,
+            gofumpt = true,
+            staticcheck = true,
+            usePlaceholders = true,
+        },
+    },
+}
 lspconfig.lua_ls.setup {}
 cmd('COQnow -s')
 

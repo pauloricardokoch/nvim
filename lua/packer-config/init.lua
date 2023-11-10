@@ -23,7 +23,7 @@ return require 'packer'.startup(function(use)
         end
     }
     use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
-    use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
-    use 'lewis6991/gitsigns.nvim'     -- OPTIONAL: for git status
+    use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
     use 'romgrk/barbar.nvim'
+    --    use 'mfussenegger/nvim-lint'
 end)
