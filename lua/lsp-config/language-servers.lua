@@ -3,6 +3,9 @@ local lspconfig = require('lspconfig')
 local coq = require('coq')
 local cmd = vim.cmd
 
+lspconfig.terraformls.setup {}
+lspconfig.tflint.setup {}
+
 lspconfig.gopls.setup {
     cmd = { 'gopls' },
     settings = {
