@@ -1,6 +1,6 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-local coq = require('coq')
+coq = require('coq')
 local cmd = vim.cmd
 
 lspconfig.terraformls.setup {}
