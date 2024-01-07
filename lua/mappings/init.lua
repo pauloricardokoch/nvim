@@ -15,7 +15,7 @@ map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 map('n', '<C-h>', '<C-w>h', opts)
 map('n', '<C-l>', '<C-w>l', opts)
 map('n', '<C-j>', '<C-w>j', opts)
-map('n', '<C-k>', '<C-k>h', opts)
+map('n', '<C-k>', '<C-w>k', opts)
 
 -- telescope
 set('n', '<leader>sf', builtin.find_files, {})
